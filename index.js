@@ -5,7 +5,5 @@ function findMatching(drivers, name) {
 }
 
 function fuzzyMatch(drivers, letters) {
-  return drivers.filter(driver => letters === driver.slice(0, letters.length))
+  return drivers.find(driver => letters.toLowerCase() === driver.slice(0, letters.length).toLowerCase())
 }
-
-console.log(fuzzyMatch(['hasar', 'wshar', 'hama'], 'ha'))
