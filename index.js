@@ -8,4 +8,4 @@ function fuzzyMatch(drivers, letters) {
   return drivers.find(driver => letters === driver.slice(0, letters.length))
 }
 
-console.log(fuzzyMatch(['hasar', 'wshar'], 'ha'))
+console.log(fuzzyMatch(['hasar', 'wshar', 'hama'], 'ha'))
